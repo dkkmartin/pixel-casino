@@ -15,7 +15,7 @@ interface ReelConfig {
 
 export default class Reels {
   private symbols: ReelSymbol[]
-  private reelStrips: ReelSymbol[][]
+  public reelStrips: ReelSymbol[][]
   private reelPositions: number[]
   private isSpinning: boolean
   private config: ReelConfig
