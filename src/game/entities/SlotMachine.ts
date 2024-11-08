@@ -66,6 +66,10 @@ export default class SlotMachine {
     this.calculateWin(this.betAmount)
   }
 
+  getReelStrips() {
+    return this.reels.reelStrips
+  }
+
   calculateWin(bet: number): number {
     const results = this.reels.getResults()
     const firstSymbol = results[0]
